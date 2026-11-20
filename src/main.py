@@ -13,7 +13,20 @@ def afficher_resultat(nom, notes):
         print("Résultat : Admis")
     else:
         print("Résultat : Non admis")
-        
+
+
+def determiner_mention(moyenne):
+    if moyenne >= 16:
+        return "Très bien"
+    elif moyenne >= 14:
+        return "Bien"
+    elif moyenne >= 12:
+        return "Assez bien"
+    elif moyenne >= 10:
+        return "Passable"
+    else:
+        return "Insuffisant"
+
 def main():
     notes = [14, 16, 12, 18]
     afficher_resultat("Ahmed", notes)
